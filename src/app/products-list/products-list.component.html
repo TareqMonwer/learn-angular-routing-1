@@ -1,0 +1,13 @@
+
+<h3>Products Catalogue</h3>
+<a routerLink="/">
+  Go home
+</a>
+
+<ul>
+  <li *ngFor="let product of products$ | async">
+    <a [routerLink]="['/products', product.id]">{{ product.title }}</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

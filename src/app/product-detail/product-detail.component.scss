@@ -1,0 +1,15 @@
+.product-card {
+  border: 2px solid gray;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgb(246, 246, 246);
+
+  .price {
+    color: rgb(225, 19, 81);
+    font-weight: bolder;
+  }
+
+  .product-image {
+    max-width: 200px;
+  }
+}

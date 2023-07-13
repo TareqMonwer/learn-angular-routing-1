@@ -1,0 +1,8 @@
+<div *ngIf="animal$ | async as animal" style="text-align: center;">
+  <h2>Animal Detail:</h2>
+  <img src="{{ animal.imageUrl }}" 
+      alt="{{ animalService.imageUrlLoadingError ? animalService.imageUrlLoadingError : animal.name }}">
+  <h4>{{ animal.name }}</h4>
+
+  <button (click)="gotoAnimals()">&larr; Back to animals</button>
+</div>
